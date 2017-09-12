@@ -61,10 +61,10 @@ const app= {
             alert("Tenemos un problema para encontrar tu ubicación");
     },
     
-    markAutomaticLocation: function(posicion) {
+    markAutomaticLocation: function(position) {
         var latitud, longitud;
-        latitud = posicion.coords.latitude;
-        longitud = posicion.coords.longitude;
+        latitud = position.coords.latitude;
+        longitud = position.coords.longitude;
 
         app.markerOrigin.setPosition(new google.maps.LatLng(latitud, longitud));
         app.item.map.setCenter({
